@@ -1,0 +1,195 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+    transition: background 0.3s, color 0.3s;
+}
+
+body {
+    background-image: url("background_website.jpg"); /* Change to your actual image path */
+    background-size: cover; /* Cover the entire screen */
+    background-position: center; /* Center the image */
+    background-attachment: fixed; /* Keep background fixed when scrolling */
+    background-repeat: no-repeat; /* Prevent repeating */
+}
+
+
+/* Header */
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Subject Buttons */
+.grid-item {
+    background: white;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-item:hover {
+    transform: scale(1.08);
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Icons */
+.grid-item img {
+    width: 80px;
+    height: 80px;
+    transition: transform 0.3s;
+}
+
+.grid-item:hover img {
+    transform: rotate(5deg);
+}
+
+/* Text */
+.grid-item p {
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Dark Mode Button */
+.toggle-darkmode {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: #222;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.toggle-darkmode:hover {
+    background: #444;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+    background: #222;
+    color: white;
+}
+
+.dark-mode .grid-item {
+    background: #333;
+    box-shadow: 4px 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .grid-item:hover {
+    box-shadow: 6px 6px 15px rgba(255, 255, 255, 0.2);
+}
+
+.dark-mode .toggle-darkmode {
+    background: #f5f5f5;
+    color: #222;
+}
+
+.dark-mode .toggle-darkmode:hover {
+    background: #ddd;
+}
+/* Year Selection */
+.year-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.year-btn {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.year-btn:hover {
+    background: #0056b3;
+}
+
+/* qna Selection */
+.qna-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.qna-btn {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.qna-btn:hover {
+    background: #0056b3;
+}
+
+/* PDF Viewer */
+.pdf-container {
+    display: none;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+iframe {
+    width: 80%;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+/* Download Button */
+.download-container {
+    display: none;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.download-btn {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.download-btn:hover {
+    background: #218838;
+}
